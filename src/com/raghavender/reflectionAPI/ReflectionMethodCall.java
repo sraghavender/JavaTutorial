@@ -13,6 +13,14 @@ public class ReflectionMethodCall {
             if(employeeMethod.getName().equals("sayName")){
                 employeeMethod.invoke(employee);
             }
+            if(employeeMethod.getName().equals("thisIsPrivateMethod")){
+                employeeMethod.setAccessible(true);
+                employeeMethod.invoke(employee);
+            }
+            if(employeeMethod.getName().equals("thisIsPrivateStatic")){
+                employeeMethod.setAccessible(true);
+                employeeMethod.invoke(null);
+            }
 
         }
 

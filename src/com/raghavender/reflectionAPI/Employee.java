@@ -31,18 +31,19 @@ public class Employee {
         this.age = age;
     }
 
-    public void sayName(){
-        System.out.println("My name is "+name);
+    public void sayName() {
+        System.out.println("My name is " + name);
     }
-    private void thisIsMethod(){
+
+    private void thisIsPrivateMethod() {
         System.out.println("This is private method");
     }
 
-    public static void thisIsPublicStaticMethod(){
+    public static void thisIsPublicStaticMethod() {
         System.out.println("This is public static method");
     }
 
-    private static void thisIsPrivateStatic(){
+    private static void thisIsPrivateStatic() {
         System.out.println("This is private static method");
     }
 }
